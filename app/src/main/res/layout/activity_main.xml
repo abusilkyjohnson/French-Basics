@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
+<RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -9,8 +9,73 @@
     android:orientation = "vertical"
     tools:context=".MainActivity">
 
+    <Space
+        android:id="@+id/topEmptySpace"
+        android:layout_width="match_parent"
+        android:layout_height="60dp" />
 
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/topEmptySpace"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="39dp"
+        android:text="French Basics"
+        android:textColor="#B3FFFFFF"
+        android:textSize="50dp"
+        android:textStyle="bold" />
 
+    <Button
+        android:id="@+id/blackButt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Black"
+        android:textColor="@color/black"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/title"
+        android:layout_marginTop="50dp"
+        />
 
-</LinearLayout>
+    <Button
+        android:id="@+id/greenButt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/blackButt"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="Green"
+        android:textColor="#13B736" />
+
+    <Button
+        android:id="@+id/PurpleButt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/greenButt"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="Purple"
+        android:textColor="#5F1A6A" />
+
+    <Button
+        android:id="@+id/YellowButt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/PurpleButt"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="Yellow"
+        android:textColor="#FFEB3B" />
+
+    <Button
+        android:id="@+id/redButt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/YellowButt"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="Red"
+        android:textColor="#F44336" />
+
+</RelativeLayout>
 
